@@ -1,0 +1,67 @@
+body {
+  background: #2e3b49;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  margin: 0;
+  min-height: 100vh;
+}
+h1 {
+  color: #fbf5f6;
+  margin-top: 40px;
+  letter-spacing: 2px;
+}
+#game {
+  display: grid;
+  grid-template-columns: repeat(3, 80px);
+  grid-template-rows: repeat(3, 80px);
+  gap: 8px;
+  margin: 30px 0;
+}
+.cell {
+  width: 80px;
+  height: 80px;
+  background: #f8ecec;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px #0001;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.5rem;
+  cursor: pointer;
+  transition: background 0.2s;
+  user-select: none;
+}
+.cell:hover {
+  background: #fefefd;
+}
+.heart {
+  color: #960814;
+  text-shadow: 0 1px 2px #0002;
+}
+.diamond {
+  color: #21c9d5;
+  text-shadow: 0 1px 2px #0002;
+}
+#status {
+  font-size: 1.2rem;
+  margin-bottom: 18px;
+  color: #f2eded;
+  min-height: 1.5em;
+}
+#reset {
+  padding: 10px 28px;
+  font-size: 1rem;
+  background: #315971;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 10px;
+  box-shadow: 0 2px 6px #0001;
+  transition: background 0.2s;
+}
+#reset:hover {
+  background: #1d3557;
+}
